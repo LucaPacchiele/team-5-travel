@@ -7,10 +7,13 @@ export const AppContext = createContext()
 //importare ed impostare AppProvider a monte dei consumers
 const AppProvider = ({ children }) => {
 
+  const logo = "http://51.77.82.133:86/images/insolita.png"
 
   const url = "http://51.77.82.133:86/api/quotations/QUO_5fb3acb3a0f18"
-
+  
+  const [allData, setAllData] = useState([])
   const [giorni, setGiorni] = useState([])
+  
   
 
   const callApi = async () => {
@@ -20,6 +23,8 @@ const AppProvider = ({ children }) => {
       console.log(data)
 
       //configurare lo stato
+      setAllData(data.results.data)
+       console.log(allData)
       setGiorni(data.results.data.rows)
 
 
@@ -33,11 +38,11 @@ const AppProvider = ({ children }) => {
   //all'avvio del componente provider
   useEffect( () => {
     callApi()
-  }, [])
+  },[])
 
   return (
     //passaggio di variabili, setVariabili e funzioni da invocare nei diversi componenti
-    <AppContext.Provider value={{ callApi, giorni}}>
+    <AppContext.Provider value={{ callApi, giorni,allData,logo}}>
       {children}
     </AppContext.Provider>
   )
