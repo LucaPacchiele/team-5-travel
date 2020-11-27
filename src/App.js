@@ -1,19 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 //importazione componenti
-import Header from './components/Header'
+import Page from './components/Page'
 
 //importazione provider
 import AppProvider from './context/AppContext'
 
 
 function App() {
+
   return (
     <div className="App">
       <AppProvider>
-        
-        <Header />
-    
+
+        <Page />
 
       </AppProvider>
     </div>
