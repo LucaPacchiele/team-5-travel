@@ -2,10 +2,11 @@ import React, { useContext, useEffect } from "react";
 
 import { AppContext } from "../context/AppContext";
 
+
 const Header = () => {
 
   const { data } = useContext(AppContext)
-  
+
   const bgUrl = data.images[0].image
 
   return (
