@@ -33,9 +33,7 @@ const MapComp = () => {
      <Card.Body>
       <Card.Title className="cardTitle">{data.title}</Card.Title>
         <Breadcrumb className="breadCrumb">
-            {data.map(el =>(
-              <h1>{el}</h1>
-             ) )}
+            
             <Breadcrumb.Item active>Siracusa</Breadcrumb.Item>
             <Breadcrumb.Item active>Vendicari</Breadcrumb.Item>
             <Breadcrumb.Item active>Siracusa</Breadcrumb.Item>
