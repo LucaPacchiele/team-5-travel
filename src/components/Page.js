@@ -24,14 +24,11 @@ function Page() {
       {data
         ?
         <>
-        {/* <Header />
-        <MapComp /> */}
+        <Header />
+        <MapComp />
         <ListaPosti />
         </>
 
-
-
-        
         :
         <Spinner />
       }

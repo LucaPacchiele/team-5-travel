@@ -43,7 +43,7 @@ function Posto(props) {
     }
 
     useEffect(() => {
-        console.log(infoPosto[0].days[0].images[0].image)
+       // console.log(infoPosto[0].days[0].images[0].image)
 
     })
 
@@ -56,7 +56,7 @@ function Posto(props) {
     days[0].images.image: sfondo
     */
 
-    /* 
+    /*
     -parte iniziale
     titolo + dayDate
     sfondo grande
@@ -86,18 +86,20 @@ function Posto(props) {
             <Accordion.Collapse eventKey={eventKey}>
 
                 <Card.Body>
-                    <h1>del testo {eventKey}</h1>
-                    {infoPosto.map((info, index) => {
+                    <h1>del asddas {eventKey}</h1>
+                    
+                       {infoPosto.map((info, index) => (
+                        <div key={index}>
+                            <h1>ddddddddddd</h1>
+                            <div style={{height:300,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundImage:`url(${infoPosto[0].days[0].images[0].image}`
+                            }}></div>
+                        </div>
 
-                        <div key={index} style={{height:"300px", 
-                            background: "`url(${info.days[0].images[0].image}` cover no-repeat"}}>
-                                
-                                <div className="row">asd</div>
-                            </div> 
 
-
-
-                    })}
+                       ))}
                 </Card.Body>
 
             </Accordion.Collapse>

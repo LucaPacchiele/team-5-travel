@@ -47,10 +47,10 @@ const ListaPosti = () => {
         const nextPosto = arr[index + 1].places[0].name
 
         datePosto.push(item.dayDate)
-        console.log("  a:", a, "i", index, "     currPosto ", currPosto, "nextPosto ", nextPosto)
+       // console.log("  a:", a, "i", index, "     currPosto ", currPosto, "nextPosto ", nextPosto)
         if (currPosto !== nextPosto) {
           const b = index + 1
-          console.log("slice from ", a, " to ", index + 1, ": ", arr.slice(a, b))
+        //  console.log("slice from ", a, " to ", index + 1, ": ", arr.slice(a, b))
 
           //arr.slice(a, b) è la porzione di array che contiene i dati giorni consecutivi con lo stesso posto
 
@@ -113,7 +113,7 @@ const ListaPosti = () => {
 
   useEffect(() => {
     setPosti(unisciPosti(ordinaDataArray(giorni, "asc")))
-      stampaControllo(posti)
+    //  stampaControllo(posti)
   }, [])
 
 

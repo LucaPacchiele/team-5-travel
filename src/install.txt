@@ -1,0 +1,6 @@
+Librerie da isntallare!
+
+
+npm install react-bootstrap
+npm install react-leaflet
+npm install -s react react-dom leaflet
