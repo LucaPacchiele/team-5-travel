@@ -8,32 +8,45 @@ import '../assets/Posti.css';
 import Header from './Header'
 import Spinner from './Spinner'
 import MapComp from './MapComp'
-import ListaPosti from './ListaPosti'
-//importazione provider
-import AppProvider from '../context/AppContext'
+
+
 
 import { AppContext } from "../context/AppContext";
+import Tariffe from './Tariffe';
+import '../assets/tariffe.css'
 
 function Page() {
   const { data } = useContext(AppContext)
 
   return (
-
+      
     <div className="Page">
 
       {data
         ?
         <>
+
         <Header />
-        <MapComp />
+        <Tariffe />
+
+
+
+
+       
         <ListaPosti />
+ 
+
+        <MapComp />
+    
         </>
 
         :
         <Spinner />
+       
       }
 
     </div>
+    
   )
 
 }
