@@ -9,6 +9,12 @@ const MapComp = () => {
 
   const { data } = useContext(AppContext)
   const position = [51.505, -0.09]
+  
+  // for (let i=0; i<=data.rows.length; i++){
+  //   let filt = []
+  //   if (citta[i] !== citta[i+1]){
+  //     return filt.push(citta[i]);
+  //   }
   return (
     <>
    
@@ -34,9 +40,7 @@ const MapComp = () => {
      <Card.Body>
       <Card.Title className="cardTitle">{data.title}</Card.Title>
         <Breadcrumb className="breadCrumb">
-            {data.map(el =>(
-              <h1>{el}</h1>
-             ) )}
+            
             <Breadcrumb.Item active>Siracusa</Breadcrumb.Item>
             <Breadcrumb.Item active>Vendicari</Breadcrumb.Item>
             <Breadcrumb.Item active>Siracusa</Breadcrumb.Item>

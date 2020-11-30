@@ -8,7 +8,9 @@ import '../assets/Posti.css';
 import Header from './Header'
 import Spinner from './Spinner'
 import MapComp from './MapComp'
-import ListaPosti from './ListaPosti'
+
+
+
 //importazione provider
 import AppProvider from '../context/AppContext'
 
@@ -24,10 +26,19 @@ function Page() {
       {data
         ?
         <>
-        {/* <Header />
-        <MapComp /> */}
+
+
+       
         <ListaPosti />
+ 
+
+
+        <Header />
+        <MapComp />
+    
         </>
+
+
 
 
 
