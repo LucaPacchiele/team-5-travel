@@ -8,6 +8,12 @@ const MapComp = () => {
 
   const { data } = useContext(AppContext)
   const position = [51.505, -0.09]
+  
+  // for (let i=0; i<=data.rows.length; i++){
+  //   let filt = []
+  //   if (citta[i] !== citta[i+1]){
+  //     return filt.push(citta[i]);
+  //   }
   return (
     <>
    
