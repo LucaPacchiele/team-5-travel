@@ -1,0 +1,27 @@
+.mapComp{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapComp_cardContainer{
+    width:100vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.mapComp_cardContainer_mapWrapper{
+    margin:0 auto; 
+}
+
+.cardTitle{
+    color:rgb(220, 172, 16);
+    font-size: 30px;
+}
+
+.breadCrumb{
+    background-color: white;
+}

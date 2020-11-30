@@ -1,8 +1,15 @@
 import React, { useContext } from 'react'
 
+
+
+import '../assets/Posti.css';
+
 //importazione componenti
 import Header from './Header'
 import Spinner from './Spinner'
+import MapComp from './MapComp'
+
+
 
 import { AppContext } from "../context/AppContext";
 import Tariffe from './Tariffe';
@@ -18,9 +25,23 @@ function Page() {
       {data
         ?
         <>
+
         <Header />
         <Tariffe />
+
+
+
+
+       
+        <ListaPosti />
+ 
+
+        <MapComp />
+    
         </>
+
+
+
 
 
         

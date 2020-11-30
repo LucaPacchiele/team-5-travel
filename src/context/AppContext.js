@@ -18,7 +18,7 @@ const AppProvider = ({ children }) => {
           setData(res.results.data);
 
         } catch (err) {
-          alert('Si è verificato un errore', err)
+          alert('Si Ë verificato un errore', err)
         }
       })()
     }, [])
