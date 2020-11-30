@@ -1,9 +1,10 @@
 import React, { useContext, useEffect } from "react";
 import 'leaflet/dist/leaflet.css'
-import './MapComp.css'
+import '../assets/MapComp.css'
 import { AppContext } from "../context/AppContext";
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet"
 import {Card, Button, Breadcrumb} from 'react-bootstrap'
+
 const MapComp = () => {
 
   const { data } = useContext(AppContext)

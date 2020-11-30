@@ -2,13 +2,15 @@ import React, { useContext } from 'react'
 
 
 
-import '../assets/Giorni.css';
+import '../assets/Posti.css';
 
 //importazione componenti
 import Header from './Header'
 import Spinner from './Spinner'
 import MapComp from './MapComp'
-import ListaGiorni from './ListaGiorni'
+
+
+
 //importazione provider
 import AppProvider from '../context/AppContext'
 
@@ -24,12 +26,20 @@ function Page() {
       {data
         ?
         <>
+
+
+       
+        <ListaPosti />
+ 
+
+
         <Header />
         <MapComp />
-        {/* // <ListaGiorni /> */}
+    
         </>
 
-        // <Header />
+
+
 
 
         

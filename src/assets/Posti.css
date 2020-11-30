@@ -1,0 +1,15 @@
+.ListaPosti h1{
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFB400;
+    font-weight: bold;
+}
+.ListaPosti h2{
+    display:inline;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.nav-left{
+    background-color: aquamarine;
+}
