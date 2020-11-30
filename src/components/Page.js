@@ -11,29 +11,31 @@ import MapComp from './MapComp'
 
 
 
-//importazione provider
-import AppProvider from '../context/AppContext'
-
 import { AppContext } from "../context/AppContext";
+import Tariffe from './Tariffe';
+import '../assets/tariffe.css'
 
 function Page() {
   const { data } = useContext(AppContext)
 
   return (
-
+      
     <div className="Page">
 
       {data
         ?
         <>
 
+        <Header />
+        <Tariffe />
+
+
+
 
        
         <ListaPosti />
  
 
-
-        <Header />
         <MapComp />
     
         </>
@@ -45,9 +47,11 @@ function Page() {
         
         :
         <Spinner />
+       
       }
 
     </div>
+    
   )
 
 }
