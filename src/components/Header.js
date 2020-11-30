@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 
 import { AppContext } from "../context/AppContext";
 
@@ -16,7 +16,7 @@ const Header = () => {
       <div className="row">
         <div className="vh-100 overlay">
           <div className="Logo"></div>
-          <div className="titleHeader">
+          <div className="title">
             <h1> {data.customerName} <br /> {data.title} </h1>
             <button className="btn btn-primary">
               scopri di più

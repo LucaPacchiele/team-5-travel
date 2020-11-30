@@ -1,0 +1,19 @@
+.container .accordion .card .card-header h2 {
+    color:#0063C9;
+    font-size: 36px;
+}
+
+.container .card-header i {
+    color: grey;
+    font-size: 18px;
+}
+
+.container .accordion .card .card-body div.boxType {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.container .accordion .card .card-body div.text-right p {
+    font-weight: 650;
+}
