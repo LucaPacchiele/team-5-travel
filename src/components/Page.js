@@ -29,7 +29,7 @@ function Page() {
 
   useEffect(() => {
     console.log("PAGE: ", auth)
-  }, [])
+  },[])
   
   return (
       
