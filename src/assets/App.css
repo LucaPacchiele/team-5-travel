@@ -100,3 +100,18 @@ body{
 .hover-section:hover{
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
+
+.small-text {
+    font-size: 14px;
+    line-height: 16px;
+    padding:15px;
+}
+.text-bold{
+    font-weight: bold;
+}
+.text-uppercase {
+    text-transform: uppercase!important
+}
+.s-between{
+    justify-content: space-between;
+}
