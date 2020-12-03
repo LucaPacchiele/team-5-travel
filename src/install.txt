@@ -1,0 +1,8 @@
+Librerie da installare!
+
+
+npm install react-bootstrap
+npm install react-leaflet
+npm install -s react react-dom leaflet
+npm install react-router-dom
+npm install react-cookie

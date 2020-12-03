@@ -1,15 +1,172 @@
-.ListaPosti h1{
+.ListaPosti h1 {
     font-size: 28px;
+    padding-bottom: 8px;
     line-height: 33px;
     color: #FFB400;
     font-weight: bold;
 }
-.ListaPosti h2{
-    display:inline;
+
+.ListaPosti h2 {
     font-size: 24px;
     line-height: 28px;
     font-weight: 500;
 }
-.nav-left{
+
+.ListaPosti h3 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.ListaPosti h4 {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.ListaPosti h5 {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase!important;
+}
+
+.ListaPosti .nav-left {
     background-color: aquamarine;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.titoloGiorno {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.accomodationList {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.accomodation {
+    display: flex;
+}
+
+.accomodationFotoGallery {
+    display: flex;
+}
+
+.accomodationFoto {
+    margin-right: 15px;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative
+}
+
+.accomodationInfo {
+    padding: 20px;
+}
+
+.ListaPosti .tagContainer {
+    display: flex;
+}
+
+.ListaPosti .tag {
+    border-radius: 50px;
+    border: 1px solid;
+    padding: 5px 10px;
+    margin-right: 2px;
+    color: #0063C9;
+}
+
+.titoloAlternativa {
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #bebebe;
+}
+
+.includeContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.includeElement {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.infoText {
+    padding-left: 15px;
+}
+
+.circle {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-items: flex-start;
+    font-size: 18px;
+    ;
+}
+
+.headerFotoContainer {
+    display: flex;
+}
+
+.headerFoto {
+    box-sizing: border-box;
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.v-middle {
+    align-items: center;
+}
+
+.transportsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.transportsInfoContainer {
+    margin-left: 20px;
+}
+
+.transportsInfo {
+    margin: 20px;
+}
+
+.transportsIcon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(255, 179, 0)
+}
+.largeModal{
+    width:500px;
+    padding:30px;
 }
