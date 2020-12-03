@@ -29,7 +29,7 @@ function Page() {
 
   useEffect(() => {
     console.log("PAGE: ", auth)
-  }, [])
+  },[])
   
   return (
       
@@ -41,13 +41,13 @@ function Page() {
 
         <Logout />
 
-        {/* <Header />
+        <Header />
         <Tariffe />
 
        
  
 
-        <MapComp /> */}
+        <MapComp />
         <ListaPosti />
     
         </>
