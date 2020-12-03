@@ -25,7 +25,7 @@ function Page() {
   let auth = useContext(authContext);
 
   useEffect(() => {
-    console.log("PAGE: ", auth)
+    //console.log("PAGE: ", auth)
   }, [])
   
   return (

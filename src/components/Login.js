@@ -14,8 +14,8 @@ import { useHistory } from "react-router-dom";
 
 
 const Login = () => {
-  const [username, setUsername] = useState("")
-  const [password, setPassword] = useState("")
+  const [username, setUsername] = useState("asd")
+  const [password, setPassword] = useState("123")
   let auth = useContext(authContext);
   let history = useHistory();
 
@@ -30,7 +30,7 @@ const Login = () => {
     }
 
   }
-
+  
 
   useEffect(() => {
     console.log("LOGIN: ", auth)
