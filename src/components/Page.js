@@ -9,6 +9,9 @@ import Header from './Header'
 import Spinner from './Spinner'
 import MapComp from './MapComp'
 import ListaPosti from './ListaPosti'
+import Operator from './Operator';
+import Footer from './Footer';
+
 
 import Logout from './Logout'
 
@@ -42,13 +45,15 @@ function Page() {
         <Logout />
 
         <Header />
+        <Operator/>
+        <MapComp />
         <Tariffe />
+        <ListaPosti />
+        <Footer/>
 
        
- 
+        
 
-        <MapComp />
-        <ListaPosti />
     
         </>
 
