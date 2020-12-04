@@ -1,7 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
 
-
-
 import '../assets/Posti.css';
 
 //importazione componenti
@@ -9,17 +7,14 @@ import Header from './Header'
 import Spinner from './Spinner'
 import MapComp from './MapComp'
 import ListaPosti from './ListaPosti'
-
+import ListaInfo from './ListaInfo'
 import Logout from './Logout'
-
-
-
 
 import { AppContext } from "../context/AppContext";
 import  { authContext }  from "../context/ProvideAuth";
 
 import Tariffe from './Tariffe';
-import '../assets/tariffe.css'
+import '../assets/cardInfo.css';
 
 
 
@@ -40,15 +35,12 @@ function Page() {
         <>
 
         <Logout />
-
         <Header />
-        <Tariffe />
-
-       
- 
-
         <MapComp />
         <ListaPosti />
+        <Tariffe /> 
+        <ListaInfo />
+        
     
         </>
 
