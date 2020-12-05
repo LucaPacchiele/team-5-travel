@@ -19,7 +19,8 @@ const Logout = () => {
 
     <div className="Logout d-flex s-between">
 
-      <h4>Benvenuto {auth.user}</h4><div><Link to="/login" onClick={() => { auth.signout() }}><h4>logout</h4></Link></div>
+      <h4>Benvenuto {auth.user}</h4><div>
+        <Link to="/login" onClick={() => { auth.signout() }}><h4>logout</h4></Link></div>
 
 
       {/* <form onSubmit={(e) => submitForm(e)} noValidate>

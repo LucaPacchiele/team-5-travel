@@ -2,9 +2,11 @@ import React, { useContext, useEffect, useState } from "react";
 import "leaflet/dist/leaflet.css";
 import "../assets/MapComp.css";
 import { AppContext } from "../context/AppContext";
+
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import { Card, Button, Breadcrumb } from "react-bootstrap";
 import { GoChevronRight } from "react-icons/go";
+
 
 const MapComp = () => {
   const { data } = useContext(AppContext);
@@ -18,6 +20,7 @@ const MapComp = () => {
       adolescenti += 1;
     }
   });
+
 
   const arrCitta = [];
   const coordsCitta = [];
@@ -47,20 +50,12 @@ const MapComp = () => {
 
   return (
     <>
-      <div className="mapComp container-fluid">
-        <Card className="mapComp_cardContainer">
-          <Card.Body>
-            <div className="mapComp_cardContainer_mapWrapper">
-              <MapContainer
-                style={{ width: "100%", height: 300 }}
-                center={coordsCitta[0]}
-                zoom={7}
-                scrollWheelZoom={false}
-              >
+
                 <TileLayer
                   attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
+
                 {coordsCitta.map((coord, i) => (
                   <Marker key={i} position={coord}>
                     <Popup>

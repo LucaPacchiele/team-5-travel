@@ -14,7 +14,7 @@ import Footer from './Footer';
 import Logout from './Logout'
 
 import { AppContext } from "../context/AppContext";
-import  { authContext }  from "../context/ProvideAuth";
+import { authContext } from "../context/ProvideAuth";
 
 import Tariffe from './Tariffe';
 import '../assets/cardInfo.css';
@@ -27,16 +27,18 @@ function Page() {
   let auth = useContext(authContext);
 
   useEffect(() => {
-    console.log("PAGE: ", auth)
-  },[])
+    //console.log("PAGE: ", auth)
+  }, [])
   
+
   return (
-      
+
     <div className="Page">
 
       {data
         ?
         <>
+
 
         <Logout />
         <Header />
@@ -47,19 +49,15 @@ function Page() {
         <ListaInfo/>
         <Footer/>
 
-       
-        
-
-    
         </>
 
         :
         <Spinner />
-       
+
       }
 
     </div>
-    
+
   )
 
 }

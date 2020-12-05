@@ -6,8 +6,11 @@ import { useHistory } from "react-router-dom";
 import "../assets/Login.css";
 
 const Login = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+
+  const [username, setUsername] = useState("team5");
+  const [password, setPassword] = useState("123");
+
+  
   let auth = useContext(authContext);
   let history = useHistory();
 
@@ -20,7 +23,10 @@ const Login = () => {
       auth.signin(username);
       history.push("/main");
     }
-  };
+
+  }
+  
+
 
   useEffect(() => {
     console.log("LOGIN: ", auth);

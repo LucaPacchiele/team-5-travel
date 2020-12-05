@@ -11,7 +11,7 @@ export const authContext = createContext()
 
 export default function ProvideAuth({ children }) {
     const [cookies, setCookie, removeCookie] = useCookies();
-    const [user, setUser] = useState(cookies.user);
+    const [user, setUser] = useState(cookies.user); //user contiene il nome dell'utente (username)
 
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -23,8 +23,7 @@ export default function ProvideAuth({ children }) {
         
         const current = new Date() //tempo corrente
 
-        current.setHours(current.getHours(), current.getMinutes()+50, current.getSeconds());
-
+        current.setHours(current.getHours(), current.getMinutes()+50, current.getSeconds()); //setHours(22, 10, 30) orario: 22h:10m:30s
         console.log("logout alle ore ->", current)
         
         setUser(username);
