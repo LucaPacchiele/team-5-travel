@@ -15,9 +15,9 @@ const Header = () => {
       backgroundRepeat: "no-repeat"
     }}>
       <div className="row">
+      <div className="Logo"></div>
         <div className="vh-100 overlay">
-          <div className="Logo"></div>
-          <div className="title">
+          <div className="title pb-3">
             <h1> {data.customerName} <br /> {data.title} </h1>
             <button className="btn btn-primary">
               scopri di più

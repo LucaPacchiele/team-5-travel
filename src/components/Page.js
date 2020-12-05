@@ -1,7 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
 
-
-
 import '../assets/Posti.css';
 
 //importazione componenti
@@ -9,17 +7,18 @@ import Header from './Header'
 import Spinner from './Spinner'
 import MapComp from './MapComp'
 import ListaPosti from './ListaPosti'
+import Operator from './Operator';
+import Footer from './Footer';
+
 
 import Logout from './Logout'
-
-
-
 
 import { AppContext } from "../context/AppContext";
 import { authContext } from "../context/ProvideAuth";
 
 import Tariffe from './Tariffe';
-import '../assets/tariffe.css'
+import '../assets/cardInfo.css';
+import ListaInfo from './ListaInfo';
 
 
 
@@ -30,6 +29,7 @@ function Page() {
   useEffect(() => {
     //console.log("PAGE: ", auth)
   }, [])
+  
 
   return (
 
@@ -39,11 +39,16 @@ function Page() {
         ?
         <>
 
-          {/* <Logout />
-          <Header />
-          <MapComp /> */}
-          <ListaPosti />
-          {/* <Tariffe /> */}
+
+        <Logout />
+        <Header />
+        <Operator/>
+        <MapComp />
+        <ListaPosti />
+        <Tariffe />
+        <ListaInfo/>
+        <Footer/>
+
         </>
 
         :
