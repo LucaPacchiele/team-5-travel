@@ -1,3 +1,7 @@
+.accordion>.card {
+    margin-bottom: 2em;
+}
+
 .container .accordion .card .card-header h2 {
     color:#0063C9;
     font-size: 36px;
@@ -16,4 +20,19 @@
 
 .container .accordion .card .card-body div.text-right p {
     font-weight: 650;
+}
+
+.container .accordion .card .card-body div.text-right span {
+    color: #FFB400;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.container .accordion .card .card-body div.text-left h3 {
+    color:  #FFB400;
+    margin-bottom: 10px;
+}
+
+.container .accordion .card .card-body div.text-left h6 {
+    margin-bottom: 20px;
 }

@@ -7,9 +7,9 @@ import { authContext } from "../context/ProvideAuth";
 import React, { useContext, useEffect, useState } from 'react'
 
 /*
-    se è autenticato
+    se è autenticato return:
     <Route>
-        children}
+        {children}
     </Route>
     
     oppure se non lo è

@@ -6,27 +6,12 @@ import { AppContext } from "../context/AppContext";
 
 import Posto from './Posto'
 
-// function AccordionToogle({ children, eventKey, callback }) {
-//   const toggle = useAccordionToggle(
-//     eventKey,
-//     () => callback && callback(eventKey),
-//   )
-
-
-//   return (
-//     <div className="card-header AccordionCardHeader" onClick={toggle}>
-//       {children}
-//     </div>
-//   )
-// }
-
 
 const ListaPosti = () => {
 
   const { data } = useContext(AppContext)
   const giorni = data.rows
   const [posti, setPosti] = useState([])
-  const [activeKey, setActiveKey] = useState()
 
   const unisciPosti = (arr) => {
     const placesArray = []
@@ -37,7 +22,10 @@ const ListaPosti = () => {
       if (index + 1 < giorni.length) {
         const nextPosto = arr[index + 1].places[0].name
 
-        datePosto.push(item.dayDate)
+        datePosto.push({
+          "day": item.dayDate,
+          "id": index
+        })
 
         if (currPosto !== nextPosto) {
           const b = index + 1
@@ -53,7 +41,10 @@ const ListaPosti = () => {
         }
       }
       else {
-        datePosto.push(item.dayDate)
+        datePosto.push({
+          "day": item.dayDate,
+          "id": index
+        })
         placesArray.push({
           "nomePosto": currPosto,
           "datePosto": datePosto,
@@ -101,17 +92,15 @@ const ListaPosti = () => {
 
   useEffect(() => {
     setPosti(unisciPosti(ordinaDataArray(giorni, "asc")))
-   //   stampaControllo(posti)
+     // stampaControllo(posti)
   }, [])
 
 
   return (
     <div className="ListaPosti">
 
-
       <div className="row">
         <div className="col">
-
 
           {posti.map((posto, index) => (
 
@@ -121,12 +110,8 @@ const ListaPosti = () => {
 
           ))}
 
-
         </div>
       </div>
-
-
-
 
     </div>
   )
