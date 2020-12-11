@@ -23,9 +23,12 @@ const Chatbot = () => {
   const messagesEndRef = React.createRef()
 
   const rispRand = ["Non era meglio se rimanevi a Siracusa?",
-    "Non lo so, prova a fare un console.log()",
+    "Prova a fare un console.log()",
     "Il computer si riavvierà tra qualche secondo...",
-    "Dovresti implementare le emoticon ;)","Dovresti implementare le emoticon ;)"]
+    "Non era meglio se rimanevi a Siracusa?",
+    "Dovresti implementare le emoticon ;)",
+    "Non era meglio se rimanevi a Siracusa?",
+    "Dovresti implementare le emoticon ;)","Prova a fare un console.log()"]
   const popupSent = {
     justifyContent: "flex-start",
     display: "flex", textAlign: "left"

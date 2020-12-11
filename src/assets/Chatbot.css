@@ -95,7 +95,7 @@
     display: none;
   }
   .Chatbot .arrowIcon {
-    display:none
+    padding:5px;
   }
   .Chatbot{
     width: auto
