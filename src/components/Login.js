@@ -61,7 +61,7 @@ const Login = () => {
 
       </video>
       <div className="login-box">
-        <h2>Login 2</h2>
+        <h2>Login 3</h2>
         <form onSubmit={(e) => submitForm(e)} noValidate>
           <div className="user-box">
             <input
