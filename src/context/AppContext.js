@@ -7,7 +7,7 @@ export const AppContext = createContext()
 //importare ed impostare AppProvider a monte dei consumers
 const AppProvider = ({ children }) => {
  
-  // const URL = "http://51.77.82.133:86/api/quotations/QUO_5fb3acb3a0f18"
+  // const URLBeforeRedirect = "http://51.77.82.133:86/api/quotations/QUO_5fb3acb3a0f18"
   const URL = "https://elegant-allen-8ecac7.netlify.app/QUO_5fb3acb3a0f18"
 
   const [data, setData] = useState()

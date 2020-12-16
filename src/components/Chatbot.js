@@ -22,13 +22,9 @@ const Chatbot = () => {
   const [msgExit, setMsgExit] = useState(false)
   const messagesEndRef = React.createRef()
 
-  const rispRand = ["Non era meglio se rimanevi a Siracusa?",
-    "Prova a fare un console.log()",
-    "Il computer si riavvierà tra qualche secondo...",
-    "Non era meglio se rimanevi a Siracusa?",
-    "Dovresti implementare le emoticon ;)",
-    "Non era meglio se rimanevi a Siracusa?",
-    "Dovresti implementare le emoticon ;)","Prova a fare un console.log()"]
+  const rispRand = ["Bot non ancora disponibile, scrivi 'chiudi' per uscire",
+    "Ancora non sono stato implementato, scrivi 'chiudi' per uscire",
+    ]
   const popupSent = {
     justifyContent: "flex-start",
     display: "flex", textAlign: "left"
@@ -42,7 +38,7 @@ const Chatbot = () => {
 
   const submitForm = (e) => {
     e.preventDefault();
-    if (text === "sconto") {
+    if (text === "chiudi") {
       setMsgExit(true)
     }
     setMessaggi(prevState => {
